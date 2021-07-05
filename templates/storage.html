@@ -1,26 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FlaskDrive</title>
+    <title>GOOGLE CLOUD STORAGE</title>
   </head>
   
   <body>
+    <center>
 
     <div class="content">
 
-        <h3>FlaskDrive: S3 Flask Demo</h3>
+        <h3>FlaskDrive: GOOGLE CLOUD STORAGE Flask Demo</h3>
     
-        <p>Welcome to this AWS S3 Demo</p>
+        <p>Welcome to this GCS Buckets Demo</p>
     
         <h2> {{ msg }}</h2>
-    
-        <div>
-          <h3>Upload your file here:</h3>
-          <form method="POST" action="/upload" enctype=multipart/form-data>
-            <input type=file name=file>
-            <input type=submit value=Upload>
-          </form>
-        </div>
     
     
         <div>
@@ -29,13 +22,18 @@
           <ul>
             {% for item in contents %}
               <li>
-                <a href="/download/{{ item.Name }}"> {{ item.Name }} </a>
+                <a href="/download/{{ item }}"> {{ item }} </a>
               </li>
             {% endfor %}
           </ul>
+          <video width="320" height="240" controls>
+            <source src="{{ url }}" mimetype="video/mp4">
+            Your browser does not support the video tag.
+          </video>
     
         </div>
 
     </div>
+  </center>
   </body>
 </html>

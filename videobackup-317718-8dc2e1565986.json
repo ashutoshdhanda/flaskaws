@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "videobackup-317718",
+  "private_key_id": "8dc2e15659867db35c0195acb7bca50df01605f3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDHh5OlJsEURD4X\nke+dvA5Fhh/eBrVl2PHohoIXWcc6US6nlRF4GpIsPSevXwpek5jy+dszgEpFPPiH\nX6lB3P/kOn2+oc82khg9lfGeWL85TJL4I22KmsRUenak1xh3zHhE61aGfd3pzs/T\n+BKAMI7nHqDUDpSbKo96UHUyDZh2ywlRQ/p/fntysXCLlPiy4NnZYVD4bSNT4ABW\n91jc7AauB+yg66ubl0SRySptG6Vyx7xteYNzLVYARNaLLpxGO5jakwjQC+yyf5JZ\nPI0Ifp/6Ixekn3hfo4tkI1VSekn5oPdvGrPfemHpRLOGHi8pbhK/YCIw1/lngvrX\nHWFQhmcjAgMBAAECggEACF0rWAwjCKTaFXlAmiDjJRCIqKRcJkQAOZPdEC2E2tgp\nJIBsyXDgf71wh6FsRdqm2eIvYurimIedw2iQwWBwn/7zsAuh+NLW9H3vyu6qO85B\n7htOFDYfB/HtcN6zX98D8gYLcnsEOmQFwjtVfmbxFpWDsfmKff0JI3XYwJuUfVlv\nVAo8L8yzzPb2VlOgDXyIvX/WePgvSrGsUpJPHMQjvnY4ivFy0wfbi910SBSZSULT\nANJNVF/rkqdIDskiNKPXcNS6E2p2sIBkFg0j2bF/bh5nbVbM8/BTK+dq/He4Yn1y\nwtyobKEUoBB3eIWKCog6DaG5G1zn3cFD03O5WYNLQQKBgQDo8mhoGpLgB2Sv+08+\nPo7ESfY1gkrCbLMCnQUKyVBvp/i+UZOnmTN49v4Ay9gXPuWbgW6T8C5Si/DSQ/cQ\nHfq9mTje3vbxzW8uhDuCywlAaptsitZ1XpHJN5p3zBp6EG+EgfDsE+bGBLekPHcL\n+3y7OSAm5DcN9qoZhx7AxnBA7QKBgQDbRo7qLAgMIWNnzh0tAa9JQa9SZzNZ7OaP\nTApNRKfq30KQKIrEhhdKvGV28WVsHBeOKzZ+xLTEl/6hKNbXD/u+C0nwhqaZ2raB\nDRl2vhQOovcfpOi0eQxTJlRWYP8xNuz4o0PdS1yfz8yeVDgejQEqjCj9NgB9Ao8U\nKZHJM8YWTwKBgQDQLfsitkT2k4TnRRefj/a080hmr6cyNESSnFMqPZl1/85r/6mO\niXqXq1x6x7G5rIs0OyrgaTBsswWoU/cTX0d7c9iATRCyLh8jmic5D0yYVe3KxhU8\n1SRCiD+yuiQbXF7dM+dkg7Ck3QhlbWgSvFDPXREf0Kpm/z8rCzdvnqgpTQKBgQC4\nvJM/OuV0wtRq6j2uY1L4VvyMYiHjSzFb3OZ4/rSxrnL33RA8TfRlpJ+fO/UExg4a\nWtHIr5TUZHHD+RI3kmG3VO9wUyEdUiScSRsA7VcclbO510eudKUrkIlRVNrq7als\nOLC+SfW5NmrfoXi+VHF9FSSbX9m9eGBuzi7i4lmrBQKBgQDXDIPa+SI8y/3wSgzP\nJCJAfx2UOvSpT9NWl0UqQC+CocWOCtsteFK6jNcc5CEsJ/H1lxZw69cDbCK/4UQ5\nduRonPkdoit/qaaAS7Ns8tREXzwDFt8ueZ4X80YL7ZwvQGxHRwfwWt5COsaAiR4I\njLELcrT/beOuiciH4kA4iiqAlQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dhanda@videobackup-317718.iam.gserviceaccount.com",
+  "client_id": "104184829995334377149",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dhanda%40videobackup-317718.iam.gserviceaccount.com"
+}
