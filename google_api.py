@@ -1,5 +1,15 @@
+import google.auth
+import google.auth.transport.requests as tr_requests
 from google.cloud import storage
+from google.resumable_media.requests import ChunkedDownload
 import datetime
+import os
+import io
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="/home/ashutosh/python_scripts_test/flaskaws/videobackup-317718-8dc2e1565986.json"
+ro_scope = u'https://www.googleapis.com/auth/devstorage.read_only'
+credentials, _ = google.auth.default(scopes=(ro_scope,))
+transport = tr_requests.AuthorizedSession(credentials)
 
 def generate_download_signed_url_v4(bucket_name, blob_name):
     """Generates a signed URL for downloading a blob.
@@ -25,6 +35,16 @@ def generate_download_signed_url_v4(bucket_name, blob_name):
     print('curl \'{}\''.format(url))
     return url
 
+def list_buckets():
+    """Lists all buckets."""
+
+    storage_client = storage.Client()
+    buckets = storage_client.list_buckets()
+
+    for bucket in buckets:
+        print(bucket.name)
+    return buckets
+
 
 def list_blobs(bucket_name):
     """Lists all the blobs in the bucket."""
@@ -47,5 +67,11 @@ def download_file(file_name, bucket):
     s3 = boto3.resource('s3')
     output = f"downloads/{file_name}"
     s3.Bucket(bucket).download_file(file_name, output)
-
     return output
+
+def download_chunk(media_url):
+    chunk_size = 50 * 1024 * 1024  # 50MB
+    stream = io.BytesIO()
+    download = ChunkedDownload(media_url, chunk_size, stream)
+    response = download.consume_next_chunk(transport)
+    return response

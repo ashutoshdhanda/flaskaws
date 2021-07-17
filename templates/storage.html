@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>GOOGLE CLOUD STORAGE</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='aguila.png') }}">
   </head>
   
   <body>
@@ -9,16 +10,16 @@
 
     <div class="content">
 
-        <h3>FlaskDrive: GOOGLE CLOUD STORAGE Flask Demo</h3>
+        <h3>WELCOME TO AGUILA</h3>
     
-        <p>Welcome to this GCS Buckets Demo</p>
+        <p>I don't have any clothes, yet. Be patient. Good things are coming.</p>
     
         <h2> {{ msg }}</h2>
     
     
         <div>
           <h3>These are your uploaded files:</h3>
-          <p>Click on the filename to download it.</p>
+          <p>Click on the filename to play it.</p>
           <ul>
             {% for item in contents %}
               <li>
@@ -26,7 +27,7 @@
               </li>
             {% endfor %}
           </ul>
-          <video width="320" height="240" controls>
+          <video width="320" height="240" controls poster='/static/aguila.png'>
             <source src="{{ url }}" mimetype="video/mp4">
             Your browser does not support the video tag.
           </video>
